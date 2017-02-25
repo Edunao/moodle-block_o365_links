@@ -1,0 +1,5 @@
+
+/* specializes the block icon */
+.block_office365 .header .title h2:before {
+    content: "\f17a";
+}
