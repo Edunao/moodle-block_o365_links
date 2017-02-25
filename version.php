@@ -25,8 +25,8 @@
  */
 $plugin->component = 'block_o365_links';
 $plugin->version = 2015031803;  // YYYYMMDDHH (year, month, day, 24-hr time).
-$plugin->release = '2.7 Edunao (Build 2015031803)';
-$plugin->requires = 2014051200;; // YYYYMMDDHH (This is the release version for Moodle 2.7).
+$plugin->release = '3.1.0 Edunao (Build 2015031803)';
+$plugin->requires = 2014051200;; // YYYYMMDDHH (This is the release version for Moodle 3.1).
 
 // Non moodle attributes.
-$plugin->codeincrement = '2.7.0000';
+$plugin->codeincrement = '3.1.0000';
