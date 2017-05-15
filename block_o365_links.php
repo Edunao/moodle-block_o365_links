@@ -40,6 +40,14 @@ class block_o365_links extends block_base {
     public function get_content() {
         global $OUTPUT, $CFG, $DB, $PAGE;
 
+        if ($USER->auth != 'oidc') {
+            // Do not show unless we are authentified with O365.
+            $this->content = new StdClass;
+            $this->content->text = '';
+            $this->content->footer = '';
+            return $this->content;
+        }
+
         if ($this->content !== null) {
           return $this->content;
         }
