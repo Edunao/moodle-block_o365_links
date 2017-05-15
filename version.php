@@ -15,18 +15,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * O365 Links block.
+ * Course list block.
  *
- * @package     block_o365_links
- * @category    block
- * @author      Boulbaba Othmani (boulbaba@edunao.com)
- * @copyright   2016 Edunao (http://www.edunao.com)
- * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package    block_o365_links
+ * @copyright  1999 onwards Martin Dougiamas (http://dougiamas.com)
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 $plugin->component = 'block_o365_links';
-$plugin->version = 2015031803;  // YYYYMMDDHH (year, month, day, 24-hr time).
-$plugin->release = '3.2.0 Edunao (Build 2015031803)';
-$plugin->requires = 2016112900;; // YYYYMMDDHH (This is the release version for Moodle 3.2).
+$plugin->version = 2015031803;  // YYYYMMDDHH (year, month, day, 24-hr time)
+$plugin->release = '3.0.0 Edunao (Build 2015031803)';
+$plugin->requires = 2015050500;; // YYYYMMDDHH (This is the release version for Moodle 2.0)
 
 // Non moodle attributes.
-$plugin->codeincrement = '3.2.0000';
+$plugin->codeincrement = '3.0.0000';
