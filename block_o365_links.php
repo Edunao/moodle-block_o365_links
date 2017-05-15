@@ -38,7 +38,7 @@ class block_o365_links extends block_base {
     }
 
     public function get_content() {
-        global $OUTPUT, $CFG, $DB, $PAGE;
+        global $OUTPUT, $CFG, $DB, $PAGE, $USER;
 
         if ($USER->auth != 'oidc') {
 <<<<<<< HEAD
