@@ -41,7 +41,10 @@ class block_o365_links extends block_base {
         global $OUTPUT, $CFG, $DB, $PAGE;
 
         if ($USER->auth != 'oidc') {
+<<<<<<< HEAD
             // Do not show unless we are authentified with O365.
+=======
+>>>>>>> MOODLE_32_STABLE
             $this->content = new StdClass;
             $this->content->text = '';
             $this->content->footer = '';
