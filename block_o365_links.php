@@ -40,6 +40,13 @@ class block_o365_links extends block_base {
     public function get_content() {
         global $OUTPUT, $CFG, $DB, $PAGE;
 
+        if ($USER->auth != 'oidc') {
+            $this->content = new StdClass;
+            $this->content->text = '';
+            $this->content->footer = '';
+            return $this->content;
+        }
+
         if ($this->content !== null) {
           return $this->content;
         }
